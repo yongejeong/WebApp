@@ -57,10 +57,10 @@
   };
 
   // State for outfits, selected outfits, and used tops
-  const [outfits, setOutfits] = useState(initialOutfits);
-  const [selectedOutfits, setSelectedOutfits] = useState({});
-  const [usedTops, setUsedTops] = useState([]);
-  const [activeDay, setActiveDay] = useState('월요일');
+  const [outfits, setOutfits] = React.useState(initialOutfits);
+  const [selectedOutfits, setSelectedOutfits] = React.useState({});
+  const [usedTops, setUsedTops] = React.useState([]);
+  const [activeDay, setActiveDay] = React.useState('월요일');
 
   // Function to select an outfit
   const selectOutfit = (day, option) => {
@@ -267,8 +267,8 @@
   );
 };
 
-export default WeeklyOutfitSelector;
-    };
+
+    
     
     // 렌더링 코드
     ReactDOM.render(<WeeklyOutfitSelector />, document.getElementById('root'));
